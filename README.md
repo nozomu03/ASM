@@ -1,8 +1,8 @@
 # ASM
 팀 이터널 하모니의 스토리텔링 프로젝트 '쌍둥이의 성좌'를 비주얼노벨라이징 하기 위한 프로젝트인 Ambiguity: Silky and Malicious는
-쌍둥이의 성조아 공식 카페(https://cafe.naver.com/eterharmony)를 기점으로 활동하며 안드로이드 용 게임을 등록하였습니다.
+쌍둥이의 성좌 공식 카페(https://cafe.naver.com/eterharmony)를 기점으로 활동하며 안드로이드 용 게임을 등록하였습니다.
 
-https://play.google.com/store/apps/developer?id=%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4+%EC%82%AC%EC%B9%B4
+"https://play.google.com/store/apps/developer?id=%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4+%EC%82%AC%EC%B9%B4"
 (스튜디오 사카의 모든 게임 확인)
 
 팀원
