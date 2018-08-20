@@ -4,8 +4,6 @@
 
 https://play.google.com/store/apps/developer?id=%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4+%EC%82%AC%EC%B9%B4
 
-\
-
 (스튜디오 사카의 모든 게임 확인)
 
 팀원
