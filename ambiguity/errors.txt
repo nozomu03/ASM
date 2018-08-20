@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/events.rpy", line 333: Line is indented, but the preceding with statement statement does not expect a block. Please check this line's indentation.
+    silpia "으아아아아아아아아아-!! 테디아아아아안!!!!!"
+    ^
+
+Ren'Py Version: Ren'Py 7.0.0.196
+Wed Aug 01 22:17:13 2018

@@ -1,0 +1,36 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 1714, in script call
+    call abcdefg from _call_abcdefg_1
+  File "game/value.rpy", line 98, in script call
+    call events_run_period from _call_events_run_period
+  File "game/event_dispatcher.rpy", line 297, in script call
+    call expression _event from call_expression_event_1
+  File "game/events.rpy", line 307, in script
+    if where not None:
+SyntaxError: unexpected EOF while parsing (game/events.rpy, line 307)
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 1714, in script call
+    call abcdefg from _call_abcdefg_1
+  File "game/value.rpy", line 98, in script call
+    call events_run_period from _call_events_run_period
+  File "game/event_dispatcher.rpy", line 297, in script call
+    call expression _event from call_expression_event_1
+  File "game/events.rpy", line 307, in script
+    if where not None:
+  File "D:\renpy\renpy-6.99.13-sdk\renpy\ast.py", line 1729, in execute
+    if renpy.python.py_eval(condition):
+  File "D:\renpy\renpy-6.99.13-sdk\renpy\python.py", line 1941, in py_eval
+    code = py_compile(code, 'eval')
+  File "D:\renpy\renpy-6.99.13-sdk\renpy\python.py", line 674, in py_compile
+    raise e
+SyntaxError: unexpected EOF while parsing (game/events.rpy, line 307)
+
+Windows-8-6.2.9200
+Ren'Py 7.0.0.196
+ambiguity 1.0
+Wed Aug 01 22:15:13 2018
