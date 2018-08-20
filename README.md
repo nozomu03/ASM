@@ -3,7 +3,10 @@
 쌍둥이의 성좌 공식 카페(https://cafe.naver.com/eterharmony)를 기점으로 활동하며 안드로이드 용 게임을 등록하였습니다.
 
 https://play.google.com/store/apps/developer?id=%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4+%EC%82%AC%EC%B9%B4
-\n(스튜디오 사카의 모든 게임 확인)
+
+\
+
+(스튜디오 사카의 모든 게임 확인)
 
 팀원
 기획자, 시나리오 라이터 - U라늄\
