@@ -6,7 +6,7 @@ https://play.google.com/store/apps/developer?id=%EC%8A%A4%ED%8A%9C%EB%94%94%EC%9
 
 (스튜디오 사카의 모든 게임 확인)
 
-팀원
+팀원\
 기획자, 시나리오 라이터 - U라늄\
 프로그래밍, 시나리오 - 이시카와 사카\
 일러스트, 시나리오 - 란세월\
