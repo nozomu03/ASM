@@ -343,7 +343,7 @@ label shorttrip:
         with dissolve
         pertin "뭐 해? 멍하니 서서는."
         name "아뇨, 이 시간대에 나오는 건 처음이라서."    
-        peritn "{size=5}내 말대로 학생회에 들어왔으면 이 시간에도 마음껏 나갈 수 있었을텐데.{/size}"
+        pertin "{size=5}내 말대로 학생회에 들어왔으면 이 시간에도 마음껏 나갈 수 있었을텐데.{/size}"
         name "네?"
         pertin "아니야, 아무것도."
         play sound "walk_slow.mp3"
@@ -356,6 +356,7 @@ label shorttrip:
         scene bg_mart with wipeleft
         "산 것들을 큰 수레에 실었다."
         pertin "혼자 밀 수 있겠어?"
+        "페르틴 선배가 든 종이 가방 안에는 향이나 초 같은 가벼운 것들이 가득가득 쌓여 있었다.{p=1.0}아마 저것도 절대 가볍다고는 말 못하겠지."
         menu:
             "문제 없어요":
                 name "괜찮아요."
@@ -365,9 +366,34 @@ label shorttrip:
                 "밀었다.{p=1.0}기름칠을 하지 않은 채 오랫동안 창고에 박아 놓아서인지 바퀴의 움직임이 상당히 뻑뻑했다."
                 $renpy.pause(2.0)                
                 stop sound
-
+                "돌아가면 곧바로 기름칠을 할까."                
+                $p_ko+=3
             "헤헤... 좀 힘들긴 한데 괜찮아요!":
-
+                play sound "wagon.wav"
+                name "좀 뻑뻑하긴 한데 못 밀 정도는 아니에요."
+                $renpy.pause(2.0)
+                stop sound
+        pertin "조금만 힘내."
+        pertin "[name]."
+        name "네?"
+        pertin "기왕 나왔는데 뭐라도 가볍게 먹고 들어가지 않을래?"
+        name "밥은..."
+        pertin "괜찮지 않을까?"
+        "물론 괜찮을 것이다.{p=1.0}간단하게 뭘 먹는다고 밥이 안 넘아갈 리가 없으니까.{p=1.0}하지만..."
+        name "저... 시간이 모자르지 않을까요...?"
+        pertin "서두르면 충분해.{p=1.0}이번에 짐 나르는 걸 도와준 보답도 겸해서."
+        name "알...겠습니다.{w=1.0}감사합니다."
+        pertin "자, 그럼 힘내 보자!"
+        play sound "wagon.wav"
+        $renpy.pause(2.0)
+        stop sound
+        scene bg_black with wiperight
+        play sound "wagon.wav"
+        $renpy.pause(2.0)
+        stop sound
+        scene bg_family with wipeleft
+        "한여름이 지났을 지 몰라도 바깥은 여전히 뜨거웠다."
+        
     return
 
 label music:

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/events.rpy", line 333: Line is indented, but the preceding with statement statement does not expect a block. Please check this line's indentation.
-    silpia "으아아아아아아아아아-!! 테디아아아아안!!!!!"
-    ^
+File "game/events.rpy", line 369: choice menuitem expects a non-empty block.
+    "헤헤... 좀 힘들긴 한데 괜찮아요!":
+                           ^
 
 Ren'Py Version: Ren'Py 7.0.0.196
-Wed Aug 01 22:17:13 2018
+Mon Aug 20 21:59:12 2018
