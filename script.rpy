@@ -1700,6 +1700,10 @@ label start:
         "[act]"
         call abcdefg from _call_abcdefg_1
     play sound "bell_nomal.mp3"
+    play sound "walk_slow.mp3"
+    scene bg_hallway with dissolve
+    $renpy.pause(2.0)
+    stop sound
     "별로 한 것도 없었는데 점심 종이 울렸다."
     show aria_happy with dissolve
     a "밥먹으러 가요, 선배."
@@ -1710,7 +1714,7 @@ label start:
     leah "[name]-! [name]-!"
     lola happy1 "[name] 선배!"
     show leah_nom at left
-    show lola_haps2 at right
+    show lola_haps2
     with dissolve
     "언제나 모이던 멤버들이 모였다."
     play sound "walk_slow.mp3"
@@ -1745,4 +1749,3 @@ label start:
     if KnightClub == True:
         call KnightClub from _call_KnightClub
     return
-# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

@@ -21,6 +21,7 @@ define pertin = Character('페르틴', color="#BA0303", ctc="ctc_rotate", ctc_po
 define right = Position(xpos=900, ypos=720)
 define centor = Position(xalign=0.5, ypos=720)
 define left = Position(xpos=250, ypos=720)
+define upcentor = Position(xalign=.4, ypos=640)
 define lola = Character('로라', image="movelola", color="2FFF00", ctc="ctc_rotate", ctc_position="fixed")
 define sena = Character('한세나', who_color="#ffb6c1", what_color="#9A91FF", ctc="ctc_rotate", ctc_position="fixed")
 define sewol = Character('란세월', who_color="#025BD1", what_color = "#90FCBE", ctc="ctc_rotate", ctc_position="fixed")
@@ -28,7 +29,7 @@ define anie = Character('애니', image= "moveanie", color="FF6CAA", ctc="ctc_ro
 define mumul1 = Character('무물', image="movemumul", color="#0004FF", ctc="ctc_rotate", ctc_position="fixed")
 define sin = Character('신', who_color="#00FF80", what_color='#97F14D', ctc="ctc_rotate", ctc_position="fixed")
 define tedian = Character('테디안', color="#8E6464", ctc="ctc_rotate", ctc_position="fixed")
-define zeno = Character('제노', who_color="#FFEB5A", what_color="282828", ctc="ctc_rotate", ctc_position="fixed")
+define zeno = Character('제노', who_color="#FFEB5A", what_color="787878", ctc="ctc_rotate", what_bold=True, ctc_position="fixed")
 
 
 

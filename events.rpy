@@ -630,6 +630,9 @@ label KnightClub:
     play sound "sword.ogg"
     $renpy.pause(3.0)
     stop sound
+    play sound "walk_slow.mp3"
+    $renpy.pause(2.0)
+    stop sound
     scene bg_knight
     show U_nom at centor
     show reina_nom at left
@@ -700,7 +703,7 @@ label KnightClub:
     "레이나가 던진 목도에 궤도가 흐트러졌다."
     "???" "방해하겠다는 거야... 레이나?"
     hide reina_nom
-    show reina_sad at left
+    show reina_ang at left
     reina "테디안. 가서 고문 선생님 불러와. 저걸 막을 수 있는 사람은 그 분 외엔 없어."
     play sound "walk.mp3"
     hide tedian_nom
@@ -718,10 +721,9 @@ label KnightClub:
     show zeno_ang at right with dissolve
     "???" "후배 앞에서 안 쪽팔리냐?"
     "U" "히... 히익!"
-    show tedian_nom at left with dissolve
     tedian "선생님 모셔왔어요!"
-    hide reina_sad
-    show reina_nom
+    hide reina_ang
+    show reina_nom at left
     reina "잘했어!"
     hide U_ang
     show U_sad
@@ -751,7 +753,7 @@ label KnightClub:
     name "네."
     zeno "U는 정체감 장애가 있어."
     name "...? {w=.5}뭐죠, 그게?"
-    zeno "'해리성 정체감 장애.'{w=.5}흔히들 다중 인격이라고 많이 하지."
+    zeno "'해리성 정체감 장애.'{w=.5} 흔히들 다중 인격이라고 많이 하지."
     name "다중 인격이라면..."
     zeno "영화. 드라마에 뻔질나게 나오는 것과는 다르게 희귀병이라는데 U는 앓고 있어."
     name "왜 치료를 안 하는거죠?"
@@ -760,7 +762,7 @@ label KnightClub:
     name "...피가 도화선이라는 건가요?"
     zeno "응. 저것도 꽤 호전된 거야. 옛날에는 사람 피는 물론 동물의 피나 피 상상도 엄금이었어."
     name "......."
-    zeno "저렇게 호전된 건 미첼의 공이 크긴 한데... {w=.5}이 이상 궁금한 일 있으면 본인들한테 들이시고, 많이 놀랐지?"
+    zeno "저렇게 호전된 건 미첼의 공이 크긴 한데... {w=.5}이 이상 궁금한 일 있으면 본인들한테 들으시고, 많이 놀랐지?"
     name "아뇨, 별로 안 놀랐어요."
     "놀람의 정도로만 따지면 평소의 아리아쪽이 더 심하다."
     zeno "그럼 다행이고.{w=.5} 자, 이거라도 하나 먹어."
@@ -777,8 +779,9 @@ label KnightClub:
     $renpy.pause(2.0)
     stop sound
     scene bg_knight
-    show reina_nom at right
-    show tedian_hap at left
+    show reina_nom at left
+    show tedian_hap at right
+    show U_sad at upcentor
     with dissolve
     "구석에 작은 솥이 끓고 있다."
     reina "어, 딱 맞춰서 왔네."
@@ -807,10 +810,15 @@ label KnightClub:
     show crey_nom at centor with dissolve
     if where == "크레이":
         crey "어라, 티타임을 방해해버린 건가요?"
+        reina "아니, 상관없어. 너도 줄까?"
+        crey "헤헤, 부탁할게요. {w=.5}그런데 U 선배는 저 구석에서 뭐하시는 거에요?"
     else:
         "???" "어라, 티타임을 방해해버린 건가요?"
-    reina "아니, 상관없어. 너도 줄까?"
-    crey "헤헤, 부탁할게요. {w=.5}그런데 U 선배는 저 구석에서 뭐하시는 거에요?"
+        reina "아니, 상관없어. 너도 줄까?"
+        crey "헤헤, 부탁할게요. {w=.5}그나저나 못보던 분이 있네요?"
+        reina "반 친구야"
+        crey "안녕하세요. 전 [crey]라고 해요."
+        name "난 [name]이야."
     "U" "히잉..."
     reina "그만 하시고 사과하는게 어때요?"
     "U" "미안해... 내...내가 그만..."
@@ -824,4 +832,21 @@ label KnightClub:
     "U" "야... 그 분을 그렇게 쉽게 만날 수 있을 것 같아?"
     if eventM:
         "아까 만나고 왔는데..."
-# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc
+    "담소."
+    "검도부원들은 서로에 대해서 상당히 잘 알고 있는 듯 했다."
+    play sound "drink.ogg"
+    $renpy.pause(1.6)
+    stop sound
+    hide reina_nom
+    show reina_hap at left
+    hide U_sad
+    show U_sad at upcentor
+    hide crey_nom
+    show crey_hap
+    reina "그랬었단 말이지..."
+    crey "예. 정말... 좋았어요."
+    
+
+
+
+    
