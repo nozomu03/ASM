@@ -845,6 +845,12 @@ label KnightClub:
     show crey_hap
     reina "그랬었단 말이지..."
     crey "예. 정말... 좋았어요."
+    name "......."
+    scene bg_black with wipeleft
+    play sound "walk_slow.mp3"
+    $renpy.pause(2.0)
+    $where="reina"
+    stop sound
     
 
 

@@ -40,6 +40,7 @@ label temp:
     return
 
 init python:
+    namedic = {"reina" : reina, "silpia" : silpia, "pertin" : pertin}
     choco = Item("choco", image="gui/inv_choco.png")
     mail = Item("mail", image="gui/inv_mail.png")
     inventory = Inventory()
@@ -238,4 +239,3 @@ image camera_right:
     zoom (2.5)
     "bg_pe.jpg"
     linear 2.0 align (.8, .5) zoom (4.5)
-# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

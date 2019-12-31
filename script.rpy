@@ -1747,5 +1747,41 @@ label start:
     $ renpy.pause(11.0)
     stop sound
     if KnightClub == True:
-        call KnightClub from _call_KnightClub
+        call KnightClub from _call_KnightClub    
+    scene bg_black with wipeleft
+    "조용한 복도. 남아있는 사람은 없는 듯 했다."
+    play sound "walk_slow.mp3"
+    $renpy.pause(2.0)
+    stop sound
+    scene bg_room_night with dissolve
+    
+    play sound "knock.mp3"
+    namedic["{0}".format(where)] "[name]?"
+    "노크 소리와 함께 누군가 나를 불렀다."
+    play sound "door.mp3"
+    $renpy.pause(2.0)
+    stop sound        
+    if namedic["{0}".format(where)] == reina:
+        show reina_nom at right with dissolve
+        name "레이나? 무슨 일이야?"
+        reina "고맙다는 말을 하고 싶어서."
+        name "갑자기?"
+        reina "U 선배가 아프다는 걸 알고 있었는데도 막지 못한 내 잘못이야."
+        name "아... 그 이야기야? 난 멀쩡해. 별로 다치지도 않았고."
+        reina "그럼 다행이지만..."
+        name "여기까지 왔는데 뭐라도 마실래?"
+        "대답을 기다리지 않고 찬장에서 커피를 꺼냈다."
+        name "커피 마셔?"
+        reina "아니... 그래도 한 번 마셔보고 싶었어."
+
+    elif namedic["{0}".format(where)] == pertin:
+        show pertin at right with dissolve
+        name "선배? 무슨 일이세요?"
+        if leah_event == True:
+            pertin "아까 도와줬잖아. 그리고 내 동생 일도 있고."
+        else:
+            pertin "아까 도와줬잖아. 답례는 했지만 조금 부족한 거 같아서."
+        pertin "잠깐 들어가도 될까?"
+        name "예... 들어오세요."
+
     return
